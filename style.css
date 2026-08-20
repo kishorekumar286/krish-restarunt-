@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* NAVBAR */
+
+nav {
+    height: 70px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+
+.logo {
+    color: #fff;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.nav-links a:hover {
+    color: #999;
+}
+
+
+/* HOME */
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 70px 7%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.75),
+            rgba(0,0,0,.75)
+        ),
+        url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 8px;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.hero-content > p:not(.small-title) {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* BUTTON */
+
+.btn,
+button {
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 8px;
+    padding: 12px 25px;
+
+    border: 2px solid #fff;
+    border-radius: 25px;
+
+    background: #fff;
+    color: #000;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    font-style: italic;
+
+    cursor: pointer;
+}
+
+.btn:hover,
+button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.btn.outline {
+    background: transparent;
+    color: #fff;
+}
+
+
+/* WELCOME */
+
+.welcome {
+    padding: 70px 7%;
+    text-align: center;
+}
+
+.welcome h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.welcome p:last-child {
+    max-width: 650px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* COMMON PAGE */
+
+.page {
+    min-height: calc(100vh - 140px);
+    padding: 65px 7%;
+}
+
+.page h1 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+
+/* MENU */
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.food-card {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.food-card:hover {
+    background: #fff;
+    color: #000;
+}
+
+.food-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.food-card p {
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.food-card strong {
+    font-size: 16px;
+}
+
+
+/* ABOUT */
+
+.about-page {
+    max-width: 1000px;
+}
+
+.about-page > p:not(.small-title) {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+
+/* BRANCHES */
+
+.branch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.branch-card {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 28px;
+}
+
+.branch-card:hover {
+    background: #fff;
+    color: #000;
+}
+
+.branch-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.branch-card p {
+    font-size: 13px;
+    line-height: 2;
+}
+
+
+/* ORDER */
+
+.order-box {
+    max-width: 600px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.order-box label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    font-size: 13px;
+}
+
+.order-box input,
+.order-box select,
+.order-box textarea {
+    width: 100%;
+    padding: 13px;
+
+    background: #000;
+    color: #fff;
+
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+    font-style: italic;
+}
+
+.order-box textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.order-box button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+/* CONTACT */
+
+.contact-box {
+    max-width: 600px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.contact-box h3 {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.contact-box h3:first-child {
+    margin-top: 0;
+}
+
+.contact-box p {
+    margin-top: 7px;
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h2 {
+    font-size: 28px;
+}
+
+footer p {
+    margin-top: 8px;
+    font-size: 11px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 9px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .page {
+        padding: 50px 5%;
+    }
+
+    .page h1 {
+        font-size: 35px;
+    }
+
+    .food-grid,
+    .branch-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome {
+        padding: 50px 5%;
+    }
+}
